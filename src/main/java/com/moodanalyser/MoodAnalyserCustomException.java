@@ -1,7 +1,6 @@
-import com.moodanalyser.MoodAnalyserException;
+package com.moodanalyser;
 
 public class MoodAnalyserCustomException {
-
     public String message;
     String returnMessage;
 
@@ -27,8 +26,8 @@ public class MoodAnalyserCustomException {
 
         try {
 
-            MoodAnalyserCustomException moodAnalyzer = new MoodAnalyserCustomException(null);
-            String mood = moodAnalyzer.analyseMood();
+            MoodAnalyserCustomException moodAnalyser = new MoodAnalyserCustomException(null);
+            String mood = moodAnalyser.analyseMood();
             System.out.println("My Mood is " + mood);
         } catch (MoodAnalyserException e) {
             System.out.println(e.type);

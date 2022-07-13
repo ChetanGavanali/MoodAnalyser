@@ -1,6 +1,10 @@
 package com.moodanalyser;
 
 public class MoodAnalyser {
+    public static String analyseMood() {
+        return null;
+    }
+
     public String moodAnalysis(String msg) {
 
         if (msg.contains("sad")) {
